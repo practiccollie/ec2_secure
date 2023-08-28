@@ -46,6 +46,7 @@ An EC2 instance is provisioned using the specified AMI and instance type. The in
 4. Create a script named `installations.sh` in the same directory with any additional setup you want to perform on the EC2 instance.
 5. Navigate to the directory containing this README and the script files.
 6. Open a terminal and run the following commands:
-   ```shell
+   ```
    terraform init
    terraform apply --auto-approve
+   ```
