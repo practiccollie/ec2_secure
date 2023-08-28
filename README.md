@@ -1,6 +1,6 @@
 # ec2_secure
 
-This **ec2_secure** script allows you to create an EC2 instance in AWS. Below is a walkthrough of the script's components and how to use it (free-tyre dont worry :grin:).
+This **ec2_secure** script allows you to create an EC2 instance in AWS. Below is a walkthrough of the script's components and how to use it (free-Tier dont worry :grin:).
 
 
 ## Script Components
