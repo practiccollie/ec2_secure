@@ -22,7 +22,7 @@ This **ec2_secure** script allows you to create an EC2 instance in AWS. Below is
 1. Make sure you have [Terraform](https://www.terraform.io/downloads.html) installed on your machine.
 2. Update the `variables.tf` file to set your desired values for `region`, `vpc_cidr`, `subnet_cidr`, `instance_ami`, and `instance_type`.
 3. Ensure that your AWS credentials are configured using environment variables or AWS configuration files.
-4. Create a script named `installations.sh` in the same directory with any additional setup you want to perform on the EC2 instance.
+4. Add any additional setup you want to install automatically on your EC2 instance in `installations.sh`.
 5. Navigate to the directory containing this README and the script files.
 6. Open a terminal and run the following commands:
    
