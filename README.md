@@ -5,17 +5,17 @@ This **ec2_secure** script allows you to create an EC2 instance in AWS. Below is
 
 ## Script Components
 
-- AWS Provider Configuration: The AWS provider configuration is set to the region specified in the `var.region` variable.
-- TLS Private Key Generation: This script generates a 4096-bit RSA private key using the `tls_private_key` resource. The private key is used to create an AWS key pair.
-- AWS Key Pair: An AWS key pair is created using the generated private key. The public key is extracted from the private key and stored for authentication.
-- Saving the Private Key to a File: The generated private key is saved to a file named `practiccollie_ec2_key.pem` using the `null_resource` and `local-exec` provisioner.
-- VPC Creation: The script creates a VPC with the specified CIDR block. DNS support and hostnames are enabled for the VPC.
-- Subnet Creation: A subnet is created within the VPC using the specified CIDR block.
-- Internet Gateway: An internet gateway is created and associated with the VPC.
-- Route Table: A route table is created for the VPC with a default route pointing to the internet gateway.
-- Subnet Association: The subnet is associated with the route table, ensuring proper routing.
-- Security Group: A security group is created to control inbound and outbound traffic for the EC2 instance. It allows incoming traffic on ports 22 (SSH) and 80 (HTTP), and all outbound traffic.
-- EC2 Instance: An EC2 instance is provisioned using the specified AMI and instance type. The instance is associated with the created subnet and security group. The user data script (`installations.sh`) is executed on instance launch.
+- **AWS Provider Configuration:** The AWS provider configuration is set to the region specified in the `var.region` variable.
+- **TLS Private Key Generation:** This script generates a 4096-bit RSA private key using the `tls_private_key` resource. The private key is used to create an AWS key pair.
+- **AWS Key Pair:** An AWS key pair is created using the generated private key. The public key is extracted from the private key and stored for authentication.
+- **Saving the Private Key localy:** The generated private key is saved to a file named `practiccollie_ec2_key.pem` using the `null_resource` and `local-exec` provisioner.
+- **VPC Creation:** The script creates a VPC with the specified CIDR block. DNS support and hostnames are enabled for the VPC.
+- **Subnet Creation:** A subnet is created within the VPC using the specified CIDR block.
+- **Internet Gateway:** An internet gateway is created and associated with the VPC.
+- **Route Table:** A route table is created for the VPC with a default route pointing to the internet gateway.
+- **Subnet Association:** The subnet is associated with the route table, ensuring proper routing.
+- **Security Group:** A security group is created to control inbound and outbound traffic for the EC2 instance. It allows incoming traffic on ports 22 (SSH) and 80 (HTTP), and all outbound traffic.
+- **EC2 Instance:** An EC2 instance is provisioned using the specified AMI and instance type. The instance is associated with the created subnet and security group. The user data script (`installations.sh`) is executed on instance launch.
 
 ## Usage Instructions
 
