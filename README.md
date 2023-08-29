@@ -3,7 +3,7 @@
 
 This **ec2_secure** Terraform script allows you to create an EC2 instance in AWS. Below is a walkthrough of the script's components and how to use it (Free-Tier dont worry :grin:).
 
-![Static Badge](https://img.shields.io/badge/Terraform-awscli-blue)
+![Static Badge](https://img.shields.io/badge/Terraform-HCL-blue)
 [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/practiccollie?style=social)](https://twitter.com/practiccollie)
 
 
