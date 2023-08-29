@@ -1,7 +1,7 @@
-# ec2_secure
+![textanim-BQ0bR](https://github.com/practiccollie/ec2_secure/assets/97513174/3ff4ab6b-e647-440f-97c6-d6dc5b864ded)
+
 
 This **ec2_secure** script allows you to create an EC2 instance in AWS. Below is a walkthrough of the script's components and how to use it (Free-Tier dont worry :grin:).
-![textanim-BQ0bR](https://github.com/practiccollie/ec2_secure/assets/97513174/3ff4ab6b-e647-440f-97c6-d6dc5b864ded)
 
 
 ## Script Components
