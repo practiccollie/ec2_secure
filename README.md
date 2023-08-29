@@ -3,6 +3,11 @@
 
 This **ec2_secure** Terraform script allows you to create an EC2 instance in AWS. Below is a walkthrough of the script's components and how to use it (Free-Tier dont worry :grin:).
 
+![Static Badge](https://img.shields.io/badge/Terraform-awscli-blue)
+[![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/practiccollie?style=social)](https://twitter.com/practiccollie)
+
+
+
 
 ## Script Components
 
@@ -22,12 +27,12 @@ This **ec2_secure** Terraform script allows you to create an EC2 instance in AWS
 
 1. Make sure you have [Terraform](https://www.terraform.io/downloads.html) installed on your machine.
 2. Update the `variables.tf` file to set your desired values for `region`, `vpc_cidr`, `subnet_cidr`, `instance_ami`, and `instance_type`.
-3. Ensure that your AWS credentials are configured using environment variables or AWS configuration files.
+3. Ensure that your AWS credentials are configured using [environment variables](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html).
 4. Add any additional setup you want to install automatically on your EC2 instance in `installations.sh`.
 5. Navigate to the directory containing this README and the script files.
-6. Open a terminal and run the following commands:
+6. Open your terminal and run the following commands:
    
-```
-terraform init
-terraform apply --auto-approve
-```
+   ```
+   terraform init
+   terraform apply --auto-approve
+   ```
