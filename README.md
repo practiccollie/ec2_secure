@@ -36,4 +36,4 @@ This **ec2_secure** Terraform script allows you to create an EC2 instance in AWS
    terraform init
    terraform apply --auto-approve
    ```
-7. Count to 10! and paste the public IP/Address you got, in your browser.
+7. Count to 10! and paste the public IP/Address you got from the output, in your browser.
